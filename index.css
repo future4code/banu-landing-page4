@@ -1,0 +1,389 @@
+/*CORP*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(39, 38, 38);
+  }
+  
+  h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .botao {
+    color: rgb(236, 234, 240);
+    text-decoration: none;
+    padding: 10px 30px;
+    background: linear-gradient(to right, rgb(20, 20, 20), rgb(245, 240, 240));
+    font-size: .9em;
+    border-radius: 32px;
+  }
+
+  .botao:hover {
+      background: rgb(12, 12, 12);
+  }
+  
+  /*NAVEGAÇÂO*/
+  
+  nav {
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  
+  nav ul li.items {
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+  }
+  
+  nav ul li.items:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #8a8d8d;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  
+  nav ul li.items:hover:after {
+    opacity: 1;
+    bottom: 8px;
+  }
+  
+  nav ul li.logo {
+    flex: 1;
+    color: black;
+    font-size: 32px;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+  }
+  
+  nav ul li a {
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .4s;
+  }
+  
+  nav ul li:hover a {
+    color: #8a8d8d;
+  }
+  
+  
+  /*CABEÇALHO*/
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/pexels-photo-2117938.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(227, 228, 233);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    color: rgb(235, 235, 238);
+    padding: 10px;
+    font-size: 3.4em;
+  }
+  
+  header p {
+    margin-bottom: 2em;
+    font-size: 1.6em;
+    line-height: 50px;
+  }
+  
+  #sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    background-image: url(img/maos-index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #sobre h2 {
+    color:rgb(39, 38, 38);
+    padding: 10px;
+    font-size: 4.4em;
+  }
+  
+  #sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+    color: rgb(39, 38, 38);
+    font-size: 1.5em;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  #sobre .botao {
+    background-color: rgb(39, 38, 38);
+    color: rgb(255, 255, 255);
+  }
+  
+  #solucoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  #solucoes div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  #solucoes img {
+    width: 30%;
+  
+  }
+
+  #solucoes img:hover{
+    cursor: pointer;
+}
+  
+  #solucoes h2 {
+    color: rgb(39, 38, 38);
+    font-size: 2.4em;
+  }
+  
+  #solucoes h3 {
+    color: rgb(39, 38, 38);
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  #solucoes p {
+    color: rgb(39, 38, 38);
+    font-size: 24px;
+  }
+
+  .nova h2 {
+    color: rgb(39, 38, 38);
+    font-size: 2.4em;
+    text-align: center;
+  }
+
+  /*FOTOS*/
+  
+  #fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 20px; */
+  }
+  
+  #fotos h2 {
+    margin-bottom: 20px;
+    color: rgb(39, 38, 38);
+    font-size: 40px;
+  }
+  
+  #fotos img {
+    width: 100%;
+  }
+  
+  /*CONTATO*/
+  
+  #contato h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #contato h2 {
+    color: rgb(39, 38, 38);
+    font-size: 2.2em;
+  }
+  
+  #contato p {
+    text-align: center;
+    padding: 18px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: #FFFFFF
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #6F6F73;
+  }
+  
+  @media screen and (min-width: 768px) {
+    /*nav*/
+    nav {
+      padding: 5px 30px;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    nav ul {
+      flex-direction: row;
+      width: 70%;
+    }
+  
+    nav ul li.items {
+      width: 100%;
+  }
+  
+  nav ul li.items:hover {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #8a8d8d;
+    box-shadow: inset 0 0 10px #161616;
+  }
+  
+  nav ul li.items:hover:after {
+    opacity: 0;
+  }
+  
+    /*Cabeçalho*/
+  
+    header {
+      height: 600px;
+      height: 60vh;
+      justify-content: center;
+    }
+  
+    /*Sobre*/
+  
+    #sobre {
+      height: 600px;
+      height: 60vh;
+      justify-content: center;
+    }
+  
+    /*Soluções*/
+  
+    #solucoes {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: 0 auto;
+      height: 600px;
+      height: 60vh;
+      justify-content: center;
+  }
+  
+    #solucoes h2 {
+      text-align: center;
+      width: 100%;
+    }
+  
+    #solucoes div {
+      flex-grow: 1;
+      flex-basis: 150px;
+      padding: 0 10px;
+    }
+  
+    #fotos {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    #fotos h2 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    #fotos img {
+      width: 33.3333333%;
+    }
+  
+    #contato {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  
+    #contato h2, #contato p {
+      width: 100%;
+    }
+  }
+  
+  /*DOIS PRIMEIROS BANNERS*/
+  
+  @media screen and (max-width: 1301px) {
+    
+    header {
+      background-image: none; 
+      background: rgb(217, 219, 219);
+    }
+  
+    header p {
+      font-size: 1.2em;
+      font-weight: bolder;
+    }
+    #sobre {
+      background-image: none;
+      background: rgb(149, 151, 151);
+    }
+  
+    #sobre h2 {
+      font-size: 36px;
+    }
+  
+    #sobre p {
+      font-size: 1.2em;
+      font-weight: bolder;
+    }
+
+    #solucoes p {
+      padding: .2px;
+    }
+
+    .nova h2 {
+      color: rgb(39, 38, 38);
+      font-size: 3.4em;
+      text-align: center;
+      padding: 0px 10px;
+    }
+  }
