@@ -37,6 +37,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: #c8dbdb;
   }
   
   nav ul {
@@ -45,11 +46,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
   }
   
   nav ul li {
-    padding: 15px 0;
+    padding: 10px 0;
     cursor: pointer;
+    
+  
   }
   
   nav ul li.items {
@@ -57,6 +61,7 @@
     width: auto;
     margin: 0 16px;
     text-align: center;
+    
   }
   
   nav ul li.items:after {
@@ -74,6 +79,7 @@
   nav ul li.items:hover:after {
     opacity: 1;
     bottom: 8px;
+    
   }
   
   nav ul li.logo {
@@ -83,6 +89,7 @@
     font-weight: 600;
     cursor: default;
     user-select: none;
+    
   }
   
   nav ul li a {
@@ -91,6 +98,7 @@
     font-weight: 600;
     text-decoration: none;
     transition: .4s;
+   
   }
   
   nav ul li:hover a {
@@ -104,17 +112,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(img/pexels-photo-2117938.jpeg);
+    background-image: url(img/pexels-photo-2341290.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: rgb(227, 228, 233);
+    color: rgb(13, 13, 14);
     text-align: center;
     padding: 20px;
+    min-height: 100vh; /*AJUSTE RESPONSIVIDADE*/
+    min-width: 100vw; /*AJUSTE RESPONSIVIDADE*/
+
+   
   }
   
   header h1 {
-    color: rgb(235, 235, 238);
+    color: rgb(15, 15, 15);
     padding: 10px;
     font-size: 3.4em;
   }
@@ -123,94 +135,16 @@
     margin-bottom: 2em;
     font-size: 1.6em;
     line-height: 50px;
+ 
   }
   
-  #sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px 30px 30px 30px;
-    background-image: url(img/maos-index.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  #sobre h2 {
-    color:rgb(39, 38, 38);
-    padding: 10px;
-    font-size: 4.4em;
-  }
-  
-  #sobre p {
-    margin-bottom: 2.5em;
-    max-width: 1000px;
-    color: rgb(39, 38, 38);
-    font-size: 1.5em;
-    line-height: 50px;
-    text-align: center;
-    font-weight: 500;
-  }
-  
-  #sobre .botao {
-    background-color: rgb(39, 38, 38);
-    color: rgb(255, 255, 255);
-  }
-  
-  #solucoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-  }
-  
-  #solucoes div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  #solucoes img {
-    width: 30%;
-  
-  }
-
-  #solucoes img:hover{
-    cursor: pointer;
-}
-  
-  #solucoes h2 {
-    color: rgb(39, 38, 38);
-    font-size: 2.4em;
-  }
-  
-  #solucoes h3 {
-    color: rgb(39, 38, 38);
-    font-size: 20px;
-    padding: 10px;
-  }
-  
-  #solucoes p {
-    color: rgb(39, 38, 38);
-    font-size: 24px;
-  }
-
-  .nova h2 {
-    color: rgb(39, 38, 38);
-    font-size: 2.4em;
-    text-align: center;
-  }
-
   /*FOTOS*/
   
   #fotos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding-top: 20px; */
+
   }
   
   #fotos h2 {
@@ -223,36 +157,29 @@
     width: 100%;
   }
   
-  /*CONTATO*/
   
-  #contato h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  #contato h2 {
-    color: rgb(39, 38, 38);
-    font-size: 2.2em;
-  }
-  
-  #contato p {
-    text-align: center;
-    padding: 18px;
-  }
   
   footer {
     text-align: center;
     padding: 10px;
-    background-color: black;
-    color: #FFFFFF
+    background-color: #c8dbdb;
+    color: #0f0f0f;
+    
   }
+  .redessociais{
+    text-align: left;
+    padding-left: 10vh;
+}
+.endereco{
+    
+  text-align: right;
+  padding-right: 10vh;
+  
+}
   
   footer a {
     text-decoration: none;
-    color: #6F6F73;
+    color: #c8dbdb;
   }
   
   @media screen and (min-width: 768px) {
@@ -298,56 +225,7 @@
       justify-content: center;
     }
   
-    /*Soluções*/
-  
-    #solucoes {
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      max-width: 1000px;
-      margin: 0 auto;
-      height: 600px;
-      height: 60vh;
-      justify-content: center;
-  }
-  
-    #solucoes h2 {
-      text-align: center;
-      width: 100%;
-    }
-  
-    #solucoes div {
-      flex-grow: 1;
-      flex-basis: 150px;
-      padding: 0 10px;
-    }
-  
-    #fotos {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  
-    #fotos h2 {
-      width: 100%;
-      text-align: center;
-    }
-  
-    #fotos img {
-      width: 33.3333333%;
-    }
-  
-    #contato {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-  
-    #contato h2, #contato p {
-      width: 100%;
-    }
-  }
+
   
   /*DOIS PRIMEIROS BANNERS*/
   
@@ -356,6 +234,7 @@
     header {
       background-image: none; 
       background: rgb(217, 219, 219);
+      
     }
   
     header p {
@@ -386,4 +265,7 @@
       text-align: center;
       padding: 0px 10px;
     }
+
+    
   }
+}
