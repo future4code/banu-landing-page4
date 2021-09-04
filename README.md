@@ -5,10 +5,3 @@ O Projeto Landing Page foi desenvolvido em um grupo com Bruno, Nayara, Joana. Co
 
 Os critérios foram:
 
-#Responsividade testada no IPhone 6/7/8 e para a versão desktop de tela 1280px de largura.
-#Seguir semântica do HTML5.
-#Links com ícone para redes sociais abrindo uma nova aba.
-#CSS deve estar em arquivos separados e com comentários das partes de layout.
-#Seguir paleta de cores baseadas na logomarca.
-#Criar link do surge.
-
