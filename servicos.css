@@ -1,0 +1,244 @@
+/*CORPO*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(39, 38, 38);
+  }
+  
+  h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  button {
+    color: rgb(236, 234, 240);
+    text-decoration: none;
+    padding: 10px 30px;
+    background: linear-gradient(to right, rgb(20, 20, 20), rgb(245, 240, 240));
+    font-size: .9em;
+    border-radius: 32px;
+  }
+
+  button:hover {
+      background: rgb(12, 12, 12);
+  }
+
+  .servicos{
+      min-height: 100vh;
+      min-width: 98,5vw; 
+      background-image: url(imagens/cor-f634-488b-a5f9-2d7b0d485886.jpg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px 30px 30px 30px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 120vh;
+  }
+  .servicos-info > p{
+    margin-bottom: 1.5em;
+    max-width: 1000px;
+    color: rgb(39, 38, 38);
+    font-weight: 500;
+  }
+
+  .servicos-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 10px 10px 10px;
+  }
+
+  .text{
+      width: 20vw;
+      height: 40vh;
+      background-color: lightgrey;
+      margin: 10px 10px 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+     
+  }
+
+  .text>p{
+    padding: 20px 20px 20x 20px; 
+    margin: 10px 10px 10px;
+  }
+
+
+
+  .servicos-introducao{
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    
+  }
+
+  .servicos-introducao > p{
+    margin-bottom: 1.5em;
+    max-width: 1000px;
+    color: rgb(39, 38, 38);
+    font-weight: 500; 
+  }
+
+ /*NAVEGAÇÂO*/
+  
+ nav {
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60px;
+    
+    
+  
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 3px 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+   
+  }
+  
+  nav ul li {
+    padding: 10px 0;
+    cursor: pointer;
+  
+  }
+  
+  nav ul li.items {
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+  }
+  
+  nav ul li.items:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #8a8d8d;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  
+  nav ul li.items:hover {
+    opacity: 1;
+    bottom: 2px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px #8a8d8d;
+    box-shadow: inset 0 0 5px #161616;
+  }
+  
+  nav ul li {
+    flex: 1;
+    color: black;
+    font-size: 32px;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+  }
+  
+  nav ul li a {
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .4s;
+  }
+  
+  nav ul li:hover a {
+    color: #8a8d8d;
+  
+  }
+  
+  
+
+  /* IMAGENS */
+
+  /*FOTOS*/
+  
+  .sobre-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .produtos-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  img{
+      max-width: 100%;
+  }
+
+
+   /* RODAPÉ */
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: #FFFFFF
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #6F6F73;
+  }
+
+
+  /*Responsividade*/
+
+  @media screen and (min-width: 320px) and (max-device-width: 500px) {
+        
+    section{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      nav ul {
+        flex-direction: row;
+        width: 70%;
+      }
+    
+    nav ul li.items:hover {
+      border-radius: 5px;
+      box-shadow: inset 0 0 5px #8a8d8d;
+      box-shadow: inset 0 0 10px #161616;
+    }
