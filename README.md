@@ -10,7 +10,7 @@ CSS deve estar em arquivos separados e com comentários das partes de layout.
 Seguir paleta de cores baseadas na logomarca provida pelo cliente.
 Conter diferentes diferentes.
 
-link do surge: https:seemly-feather.surge.sh
+link do surge: https://seemly-feather.surge.sh
 
 Prints com as imagens das páginas do site:
 ![image](https://user-images.githubusercontent.com/86752698/132112070-cf39b3b7-fffd-45b3-bf41-4c70826f5520.png)
